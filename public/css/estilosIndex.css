@@ -1,0 +1,461 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+:root{
+    scroll-behavior: smooth;
+}
+
+
+/*Menú sticky*/
+.banner {
+    width:100%;
+    
+    padding: 9rem 3rem; 
+    text-align: center;
+    background-color: #fff;
+    background: url("../img/styps.png"); /*Checar el tamaño del fondo, es muy grande   https://www.youtube.com/watch?v=bytqDffYdn8  Min. 4:00*/
+    
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    background-size: 40%;
+    background-position: center;
+    box-sizing: border-box; 
+}
+
+.banner h1 {
+    color: #f1f1f1;
+}
+
+.pegajoso{
+    width: 100%;
+    height: 50px;
+    background: #2b3ddd; /*TONO ORIGINAL*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+    box-sizing: border-box;
+
+    /* TRANSPARENCIA*/
+    /*background: rgba(4, 26, 223, 0.7);
+    /*border-bottom: rgba(12, 223, 75, 0.3);
+    */
+
+    position: sticky;
+    top: 0px;
+}
+
+.figura {
+    width: 40px;
+    margin: 0;
+}
+
+.figura img {
+    width: 100%;
+}
+
+/* ESTILO ORIGINAL DE STICKY SIN RESALTADO, SI HABILITAS EDITA EL HTML, ELIMINA LA CLASS: PRUEBA, EN LOS ITEMS ELIMINA CLASS ACTIVE Y 
+HABILITA LOS ITEMS-OPTIONS EN LOS 4 
+.item-options {
+    color: #f1f1f1;
+    margin: 0 1.5rem;
+    text-decoration: none;
+}
+
+.item-options :hover:not(.figura){
+    background-color: #747474;
+    color: #fff;
+}
+        RESALTADO EN STICKY*/
+
+.prueba a{
+    color: #f1f1f1;
+    margin: 0 1.5rem;
+    text-decoration: none;
+
+}
+
+.prueba a.active{
+    background-color: #aa1414;
+    color: #fff;
+}
+
+.prueba a:hover:not(.active){
+    background-color: rgb(15, 83, 230);
+    color: #fff;
+
+}
+
+
+
+
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+
+}
+
+header{
+    height: 40vh; /*tamaño de la altura del banner*/
+    background-image: url(../img/bannerCH.png);
+    background-repeat: no-repeat;
+    /*background-size: cover; 
+    /*background-attachment: fixed; */
+    background-position: center;
+
+}
+
+.head{
+    text-align: center;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+}
+
+.titulo{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.copy{
+    font-weight: 300;
+    font-size: 25px;
+}
+
+/*Main*/
+
+.subtitulo{
+    text-align: center;
+    font-weight: 100;
+    color: blue;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+.contenedor-servicio{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-servicio img{
+    width: 40%;
+}
+
+.checklist-servicio{
+    width: 45%;
+}
+
+.service{
+    margin-bottom: 25px;
+}
+
+.n-service{
+    margin-bottom: 80px;
+    color: yellow;
+}
+.preguntas{
+    font-weight: bold;
+    font-size: 31px;
+    color:#0000FF/*#0066FF*/;
+}
+
+.number{
+    display: inline-block;
+    background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+    width: 30px;
+    height: 30px;
+    color: cornsilk;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 100px;
+    line-height: 30px;
+    margin-right: 7px;
+}
+
+.texto{
+    color: #0033FF;
+    font-size: 20px;
+}
+
+.service img{
+    width:550px;
+}
+
+.galeria{
+    background: rgba(102, 153, 255, 0.349);
+}
+
+.contenedor-galeria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img-galeria{
+    object-fit: cover;
+    width: 30%;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    /*cursor:pointer;  MANITA*/
+}
+
+/*  A V I S O 33:35 a 38:00  está el light-box* Y DEL 47 EN ADELANTE AJUSTES AL RESPONSIVO LIGHT BOX*/
+
+
+.powered{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.contenedor-powered{
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contenedor-powered img{
+    
+    
+    display: block;
+    margin: 0 auto;
+
+    
+
+
+
+
+}
+
+.n-powered{
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: 400;
+   
+}
+
+footer{
+    /*background: #9f8ad0; */
+    background: rgba(0, 51, 255, 0.815);
+    padding-bottom: 0.1px;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+
+}
+
+.contact{
+    width: 40%;
+    color: #f1f1f1;
+}
+
+.creador{
+    font-weight: 200;
+    font-size: 15px;
+    
+
+}
+.creador+p{
+    font-weight: large;
+    font-size: 20px;
+    
+
+}
+.mContactos{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.iconos{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #f1f1f1;
+    border-radius: 50%;
+    text-align: center;
+    color: #f1f1f1;
+
+}
+
+.iconos:hover{
+    background: #f5f3f3;
+    color: #3023df;
+}
+.iconos i{
+    font-size: 30px;
+    line-height: 60px;
+
+}
+
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2px;
+    background: #f1f1f1;
+    margin-bottom: 60px;
+
+}
+
+/*45:21*/
+/*perfiles*/
+
+.contenedor-perfil{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+
+}
+
+.header-perfil{
+    height: 100vh;
+    background-image: linear-gradient(to right, rgba(79, 172, 254, 0.075) 0%, rgba(0, 241, 254, 0.096) 100%), url(../img/perfil/aca.jpg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+/*.head{
+    text-align: center;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+} */
+
+.titulo-perfil{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.sub-perfil{
+    font-weight: 300;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* R E S P O N S I V E */
+@media screen and (max-width:800px){
+
+    .titulo{
+        font-size: 40px;
+    }
+
+    .contenedor-servicio img{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    .checklist-servicio{
+        width: 80%;
+    }
+
+    .service{
+        margin-bottom: 30px;
+    }
+
+    /*LIGHT BOX* 48:15 */
+
+    .img-galeria{
+        width: 45%;
+    }
+
+    .contenedor-powered{
+        width: 80%;
+    }
+
+    .footer-content{
+        justify-content: center;
+    }
+
+    .mContactos{
+        width: 80%;
+        justify-content: space-evenly;
+    }
+
+    .mContactos i{
+        margin-left: 0;
+    }
+
+    .contact{
+        text-align: center;
+        width: 80%;
+        margin-bottom: 40px;
+
+    } /*ME QUEDE EN 50:16*/
+
+
+}
+
+/*HACER RESPONSIVO EL STICKY EN 11:50*/
